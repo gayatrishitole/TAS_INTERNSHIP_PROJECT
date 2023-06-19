@@ -442,3 +442,129 @@
 # vowels = start_with_vowel(new1)
 
 # print("Strings starts with vowels are: ", vowels)
+
+## practice
+
+# Write a function to find the maximum value in a list of numbers.
+
+# def max_value(number):
+#     max_num = max(number)
+#     return max_num
+
+# user_input = input("Enter the number: ")
+# list1 = list(map(int,user_input.split()))
+# max_num = max_value(list1)
+# print("Maximum  value is: ",max_num)
+
+# Implement a program that removes duplicates from a list and returns a new list without duplicates.
+
+# def remove_duplicates(number):
+#     new_list = list(set(number))
+#     return new_list
+
+# user_input = input("Enter the number: ")
+# list1 = list(map(int,user_input.split()))
+# og = remove_duplicates(list1)
+# print("new list is: ",og)
+
+# Write a program that counts the occurrence of each word in a given sentence and displays the word frequency.
+
+# def word_frequency(string):
+#     new_dictionary = { }
+
+#     for word in string:
+#         if word in new_dictionary:
+#             new_dictionary[word] += 1
+#         else:
+#             new_dictionary[word] = 1
+    
+#     return new_dictionary
+
+# user_input = input("Enter the sentence: ")
+# use = user_input.split()
+# new = word_frequency(use)
+# for char, count in new.items():
+#     print(f"The word {char} is repeated {count} times !!")
+
+# Create a function that checks if a given string is a palindrome.
+
+# def check_palindrome(string):
+#         if string == string[::-1]:
+#                 print("Its a palindrome")
+#         else:
+#                 print("Its a not palindrome")
+# ip = input("Enter the string: ")
+# check_palindrome(ip)        
+
+# Implement a program that finds the common elements between two lists and returns a new list with the common elements.
+
+# def common_element(string1,string2):
+#     sets1 = set(string1)
+#     sets2 = set(string2)
+
+#     list1 = sets1.intersection(sets2)
+
+#     return list1
+
+# ip = input("Enter the string1:  ")
+# new_list = ip.split()
+# ip1 = input("Enter the string2: ")
+# new_list2 = ip1.split()
+
+# new = common_element(new_list,new_list2)
+# print("The common elements in both the strings are: ",new)
+
+# Write a function that returns the factorial of a given number.
+
+# def factorial(number):
+#     if number == 1 or number == 0:
+#         return 1
+#     else:
+#         return number * (factorial(number - 1))
+    
+# user_input = int(input("Enter the number for factorial: "))
+# fact_ans = factorial(user_input)
+# print(f"Factorial of {user_input} is {fact_ans}")
+
+# Create a program that generates a random password consisting of alphanumeric characters and symbols.
+
+# import random
+# import string
+
+# def generate_password(length=8):
+    
+#     charater = string.ascii_letters + string.digits + string.punctuation
+
+#     password = ''.join(random.choice(charater) for _ in range(length))
+
+#     return password
+
+# pass_input = int(input("Enter the Length of desired password: "))
+
+# password = generate_password(pass_input)
+# print("Generated Password: ",password)
+
+# print(generate_password(10))
+
+# Create a dictionary that maps names to ages. Write a program that finds the oldest person in the dictionary and prints their name.
+
+# def old_person(people):
+#     old_age = 0
+#     old_person = " "
+#     for name, age in people.items():
+#         if age > old_age:
+#             old_age = age
+#             old_person = name
+#     return old_person
+    
+
+# people = {}
+# num_people = int(input("Enter the number of people: "))
+# for i in range(num_people):
+#     name = input("Enter name: ")
+#     age = int(input("Enter age: "))
+#     people[name] = age
+
+
+# old = old_person(people)
+# print("Oldest person: ",old)
