@@ -319,23 +319,126 @@
 
 # Write a program that prints all the prime numbers between 1 and a given number.
 
-user_input= int(input("Ente the number: "))
-n = 2
-i = []
+# user_input= int(input("Ente the number: "))
+# n = 2
+# i = []
 
-while n < user_input :
-    i.append(n)
-    n+=1
+# while n < user_input :
+#     i.append(n)
+#     n+=1
 
-for num in i :
-    prime = True
-    divisor = 2
-    while divisor <= int(num**0.5):
-        if num % divisor == 0:
-            prime = False
-            break
-        divisor += 1
+# for num in i :
+#     prime = True
+#     divisor = 2
+#     while divisor <= int(num**0.5):
+#         if num % divisor == 0:
+#             prime = False
+#             break
+#         divisor += 1
 
-    if prime:
-        print(num)
+#     if prime:
+#         print(num)
 
+## Lists
+
+# Question 1:
+# Write a program that takes a list of numbers as input and returns a new list containing only the even numbers from the original list
+
+# def even_num(number):
+#     even_list = []
+#     for num in number:
+#         if num % 2 == 0:
+#             even_list.append(num)
+
+#     return even_list
+
+# user_input = input("Enter the number: ")
+# number1 = list(map(int,user_input.split()))
+# print(even_num(number1))
+
+# Question 2:
+# Write a program that takes a list of strings as input and returns a new list containing the lengths of each string.
+
+# def len_of_string(string):
+#     length =[]
+#     for i in string:
+#         length.append(len(i))
+#     return length
+# user_input = input("Enter the strings: ")
+# strings = user_input.split()
+# new = len_of_string(strings)
+# for i in range(len(strings)):
+#     print(f"length of {strings[i]} is {new[i]}")
+
+# Question 3:
+# Write a program that takes two lists as input and returns a new list that contains only the common elements between the two lists.
+
+# def common_element(string1,string2):
+#     new_list = []
+#     for i in string1:
+#         for j in string2:
+#             if i == j:
+#                 new_list.append(j)
+#     return new_list
+
+# user_input = input("Enter the strings: ")
+# new1 = user_input.split()
+# user_input2 = input("Enter the strings: ")
+# new2 = user_input2.split()
+
+# common_elements = common_element(new1,new2)
+
+# print("Common elements: ",common_elements)
+
+# alternative for this question using set function
+
+# def common_elements(list1, list2):
+#     set1 = set(list1)
+#     set2 = set(list2)
+#     common = list(set1.intersection(set2))
+#     return common
+
+# user_input1 = input("Enter the first list (space-separated elements): ")
+# list1 = user_input1.split()
+
+# user_input2 = input("Enter the second list (space-separated elements): ")
+# list2 = user_input2.split()
+
+# common_elements_list = common_elements(list1, list2)
+# print("Common elements:", common_elements_list)
+
+# Question 4:
+# Write a program that takes a list of numbers as input and returns the second smallest number in the list.
+
+# def second_smallest(number):
+
+#     if len(number) < 2:
+#         return "List should have at least two numbers."
+    
+#     sort_list1 = sorted(set(number))
+    
+#     if len(sort_list1) < 2:
+#         return "ther is no second small number"
+#     else:
+#         return sort_list1[1]
+
+# ip = input("Enter the numbers: ")
+# list1 = list(map(int,ip.split()))
+# print(second_smallest(list1))
+
+# write a program that takes a list of strings as input and returns a new list containing only the strings that start with a vowel.
+
+# def start_with_vowel(string):
+#     vowels = ["a","e","i","o","u"]
+#     new_list = []
+#     for i in string:
+#         if i[0] in vowels:
+#              new_list.append(i)
+             
+#     return new_list
+
+# user_input = input("Enter the strings: ")
+# new1 = user_input.split()
+# vowels = start_with_vowel(new1)
+
+# print("Strings starts with vowels are: ", vowels)
