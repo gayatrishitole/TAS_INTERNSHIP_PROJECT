@@ -568,3 +568,104 @@
 
 # old = old_person(people)
 # print("Oldest person: ",old)
+
+# Star pattern
+
+# Question 1:
+# Write a Python program to print the following pattern:
+# *
+# **
+# ***
+# ****
+# *****
+
+# def star_pattern(n):
+#     for i in range(1, n+1):
+#         print(i * "*")
+
+# star_pattern(5)
+
+# Question 2:
+# *****
+# ****
+# ***
+# **
+# *
+
+# def star_pattern(n):
+#     for i in range(n, 0 , -1):
+#         print(i*"*")
+
+# star_pattern(10)
+
+# Question 3:
+# Write a Python program to print the following pattern:
+
+#     *
+#    **
+#   ***
+#  ****
+# *****
+
+# def star(n):
+#     for i in range(1, n+1):
+#         space = " " * (n-i)
+#         star = i * "*"
+#         print(space + star)
+
+# star(5)
+
+# Question 4:
+# Write a Python program to print the following pattern:
+
+# *****
+#  ****
+#   ***
+#    **
+#     *
+
+
+
+# def star(n):
+#     for i in range(n, 0, -1):
+#         space = " " * (n - i)
+#         star = i * "*"
+#         print(space + star)
+
+# star(5)
+
+
+# Question 5:
+# Write a Python program to print the following pattern:
+#     *
+#    ***
+#   *****
+#  *******
+# *********
+
+# def pyramid(n):
+#     for i in range(1,n+1):
+#         space = " " * (n - i)
+#         star = (2*i-1) * "*"
+#         print(space + star)
+   
+# pyramid(5)
+
+
+# Question 6:
+# Write a Python program to print the following pattern:
+
+# *********
+#  *******
+#   *****
+#    ***
+#     *
+
+
+# def rev_pyramid(n):
+#     for i in range(n,0,-1):
+#         space = " "* (n-i)
+#         star = (2*i -1) * "*"
+#         print(space + star)
+
+# rev_pyramid(5)
