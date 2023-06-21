@@ -669,3 +669,4 @@
 #         print(space + star)
 
 # rev_pyramid(5)
+
