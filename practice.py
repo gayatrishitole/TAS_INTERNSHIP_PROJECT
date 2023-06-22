@@ -705,5 +705,14 @@
 #     raise ValueError("Enter the appropriate salary")
 
 
+# import os
 
+# os.mkdir("data1")
 
+# for i in range(1,10):
+#     os.mkdir(f"Project {i}")
+   
+
+# os.rmdir("main.py")
+# for i in range(1,10):
+#     os.rmdir(f"Project {i}")
