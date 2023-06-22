@@ -670,3 +670,40 @@
 
 # rev_pyramid(5)
 
+## Exception handling in python  
+
+# try:
+#     num = int(input("Enter the number: "))
+# except ValueError:
+#     print("Its not a number please enter number")
+
+# finally:
+#     print("This block will always executed")
+
+# def func1():
+#     try:
+#         l = [1,2,3,4]
+#         i = int(input("Enter the index: "))
+#         print(l[i])
+#         return 1 # this is write here because function should return something otherwise it will return none
+#     except:
+#         print("Some error occured !")
+#         return 0
+#     finally:
+#         print("I am always executed")
+
+# x = func1()
+# print(x)
+
+# By returning different values (1 or 0), the function provides a way to indicate the success or failure of the code execution. 
+# The calling code can then use the returned value to perform further actions or make decisions based on the outcome of the function.
+
+## custom error
+
+# salary = int(input("Enter the salary: "))
+# if not 5000 < salary > 60000:
+#     raise ValueError("Enter the appropriate salary")
+
+
+
+
