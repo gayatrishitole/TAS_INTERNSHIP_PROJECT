@@ -59,8 +59,8 @@
         
 # a = Person("Aditya", 21)
 
-# print(a.name)
-# print(a.age)
+# # print(a.name)
+# # print(a.age)
 
 # a.name = "Abhi"
 # print(a.name)
