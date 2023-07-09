@@ -87,3 +87,21 @@
 #       print(file)
 #       os.rename(f"C:/Users/Hp/OneDrive/Documents/Productivity tool/python-practice/imagepng/{file}", f"C:/Users/Hp/OneDrive/Documents/Productivity tool/python-practice/imagepng/{i}.png")
 #       i = i + 1
+
+# Class Method
+
+class Employee:
+    company = "Apple"
+    def show(self):
+        print(f"The name is {self.name} and company is {self.company}")
+    @classmethod
+    def change_company(cls, new_company):
+        cls.company = new_company
+
+
+e1 = Employee()
+e1.name = "Aditya"
+print(e1.show())
+e1.change_company("Google")
+print(e1.show())
+print(Employee.company)
