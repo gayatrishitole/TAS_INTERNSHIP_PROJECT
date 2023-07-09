@@ -67,3 +67,12 @@
 
 # a.age = 18
 # print(a.age)
+
+# Static Method
+
+# class Math:
+#     @staticmethod
+#     def add(a, b):
+#         return a + b
+    
+# print(Math.add(7,9)) # so here no need of instance to called the method we can directly access it by class by using static method
