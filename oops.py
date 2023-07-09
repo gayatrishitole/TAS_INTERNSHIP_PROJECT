@@ -76,3 +76,14 @@
 #         return a + b
     
 # print(Math.add(7,9)) # so here no need of instance to called the method we can directly access it by class by using static method
+
+# import os
+
+# # os.rename("C:/Users/Hp/OneDrive/Documents/Productivity tool/python-practice/list.text", "C:/Users/Hp/OneDrive/Documents/Productivity tool/python-practice/new.txt")
+# i = 1
+# files = os.listdir("C:/Users/Hp/OneDrive/Documents/Productivity tool/python-practice/imagepng")
+# for file in files:
+#     if file.endswith(".png"):
+#       print(file)
+#       os.rename(f"C:/Users/Hp/OneDrive/Documents/Productivity tool/python-practice/imagepng/{file}", f"C:/Users/Hp/OneDrive/Documents/Productivity tool/python-practice/imagepng/{i}.png")
+#       i = i + 1
