@@ -169,32 +169,3 @@
 # e2 = Programmer("Aditya", 342, "Python")
 # print(e2.name,e2.id,e2.lang)
 
-import random
-
-# Define a list of responses
-greetings = ["Hello!", "Hi there!", "Greetings!"]
-questions = ["How are you feeling today?", "What brings you here today?"]
-positive_responses = ["That's great to hear!", "I'm glad you're feeling good."]
-negative_responses = ["I'm sorry to hear that.", "I'm here to help you."]
-
-# Chatbot function
-def chatbot():
-    # Greet the user
-    print(random.choice(greetings))
-
-    # Ask a question
-    print(random.choice(questions))
-
-    # Get user input
-    user_input = input()
-
-    # Assess user input and provide response
-    if "good" in user_input or "great" in user_input:
-        print(random.choice(positive_responses))
-    elif "bad" in user_input or "not well" in user_input:
-        print(random.choice(negative_responses))
-    else:
-        print("I see. How can I assist you today?")
-
-# Run the chatbot
-chatbot()
